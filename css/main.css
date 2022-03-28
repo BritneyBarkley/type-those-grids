@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box
+}
+
+*,
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 1.8rem
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.first, p {
+  x index:
+}
