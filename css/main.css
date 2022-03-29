@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  font-size: 1.5rem;
   font-family: 'Merriweather', serif;
   line-height: 1.5;
 }
@@ -28,9 +29,16 @@ main {
     "banner banner banner"
     "Temple colossus garden"
     "Temple colossus garden";
+  grid-gap: .75rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-style: italic;
 }
 
 .first, p {
+  color: #fff;
   z-index: 1;
 }
 
