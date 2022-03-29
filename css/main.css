@@ -1,5 +1,7 @@
 html {
-  box-sizing: border-box
+  box-sizing: border-box;
+  font-family: Merriweather;
+  line-height: 1.5;
 }
 
 *,
@@ -11,13 +13,11 @@ html {
 body {
   margin: 0;
   font-size: 1.5rem;
-  font-family: 'Merriweather', serif;
-  line-height: 1.5;
 }
 
 h1 {
   font-style: italic;
-  font-size: 1.8rem
+  font-size: 1.8rem;
 }
 
 main {
@@ -29,7 +29,7 @@ main {
     "banner banner banner"
     "Temple colossus garden"
     "Temple colossus garden";
-  grid-gap: .75rem;
+  gap: .75rem;
 }
 
 h2 {
@@ -44,6 +44,7 @@ h2 {
 
 .banner {
   display: grid;
+  grid-area: banner
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -51,10 +52,12 @@ h2 {
 .banner img {
   grid-column: 1/ -1;
   grid-row: 1/ -1;
+  align-self: center;
 }
 
 .temple {
   display: grid;
+  grid-area: temple;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -62,10 +65,12 @@ h2 {
 .temple img {
   grid-column: 1/ 2;
   grid-row: 3/ -1;
+  align-self: center;
 }
 
 .colossus {
   display: grid;
+  grid-area: colossus;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -73,6 +78,7 @@ h2 {
 .colossus img {
   grid-column: 2/ 3;
   grid-row: 3/ -1;
+  align-self: center;
 }
 
 .garden {
@@ -84,4 +90,5 @@ h2 {
 .garden img {
   grid-column: 3/ -1;
   grid-row: 3/ -1;
+  align-self: center;
 }
