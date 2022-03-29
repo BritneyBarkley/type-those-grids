@@ -3,7 +3,8 @@ html {
 }
 
 *,
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -22,8 +23,57 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "banner banner banner"
+    "banner banner banner"
+    "Temple colossus garden"
+    "Temple colossus garden";
 }
 
 .first, p {
-  x index:
+  z-index: 1;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.banner img {
+  grid-column: 1/ -1;
+  grid-row: 1/ -1;
+}
+
+.temple {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.temple img {
+  grid-column: 1/ 2;
+  grid-row: 3/ -1;
+}
+
+.colossus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.colossus img {
+  grid-column: 2/ 3;
+  grid-row: 3/ -1;
+}
+
+.garden {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.garden img {
+  grid-column: 3/ -1;
+  grid-row: 3/ -1;
 }
