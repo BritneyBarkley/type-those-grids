@@ -45,8 +45,6 @@ h2 {
 .banner {
   display: grid;
   grid-area: banner;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .banner img {
@@ -58,8 +56,6 @@ h2 {
 .temple {
   display: grid;
   grid-area: temple;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .temple img {
@@ -71,8 +67,6 @@ h2 {
 .colossus {
   display: grid;
   grid-area: colossus;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .colossus img {
@@ -83,8 +77,6 @@ h2 {
 
 .garden {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .garden img {
